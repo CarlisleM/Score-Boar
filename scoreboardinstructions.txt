@@ -1,0 +1,36 @@
+step 1: Set smashgg url (eg https://smash.gg/tournament/uq-smash-33)
+step 2: Add ?expand[]=event&expand[]=phase?expand[]=groups to the end (eg. https://smash.gg/tournament/uq-smash-33?expand[]=event&expand[]=phase?expand[]=groups)
+step 3: Change https://smash.gg to https://api.smash.gg (eg. https://api.smash.gg/tournament/uq-smash-33?expand[]=event&expand[]=phase?expand[]=groups)
+- Here we determine event names (eg melee singles, melee doubles) -
+step 4: Getting url with event name (eg tournament/uq-smash-33/event/melee-singles) 
+step 5: Change https://api.smash.gg/tournament/uq-smash-33?expand[]=event&expand[]=phase?expand[]=groups to https://api.smash.gg/tournament/uq-smash-33/event/melee-singles?expand[]=phase&expand[]=groups using event name url
+
+
+step6:
+
+
+
+
+
+get videogame id to determine melee
+display event names that have videogame id of melee (3)
+
+
+phaseid = phase (pools, pro, ama)
+then use id in url link to get info on that phase
+
+
+
+
+Start off
+https://api.smash.gg/tournament/uq-smash-33/event/melee-singles?expand[]=phase&expand[]=groups
+https://api.smash.gg/tournament/uq-smash-33/event/melee-doubles?expand[]=phase&expand[]=groups
+
+End at
+https://api.smash.gg/phase_group/379962?expand[]=sets&expand[]=standings&expand[]=seeds
+
+
+
+tournament/uq-smash-33/event/melee-singles?expand[]=phase&expand[]=groups
+becomes
+phase_group/379962?expand[]=sets&expand[]=standings&expand[]=seeds
